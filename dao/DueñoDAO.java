@@ -30,6 +30,7 @@ public class DueñoDAO extends ConexionBD {
         } finally {
             cerrar(ps);
         }
+
     }
 
     public void actualizar(DueñoDTO dto) throws Exception {

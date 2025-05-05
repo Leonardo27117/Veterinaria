@@ -23,8 +23,8 @@ public class ConexionBD {
 
     public ConexionBD() {
         String driver = "com.mysql.cj.jdbc.Driver";
-        String user = "vet_user";
-        String pass = "v3Ter1n4#$*";
+        String user = "root";
+        String pass = "zs23014080";
         String basedatos = "VETERINARIA";
         String server = "jdbc:mysql://localhost/" + basedatos;
 

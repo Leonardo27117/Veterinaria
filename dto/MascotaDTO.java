@@ -1,5 +1,4 @@
 package veterinaria.dto;
-
 import java.util.Date;
 
 public class MascotaDTO {
@@ -11,6 +10,28 @@ public class MascotaDTO {
     private Date fechaNacimiento;
     private int dueñoId;
 
+    public MascotaDTO(int id, String especie, String raza, String color, String tamaño, Date fechaNacimiento, int dueñoId) {
+        this.id = id;
+        this.especie = especie;
+        this.raza = raza;
+        this.color = color;
+        this.tamaño = tamaño;
+        this.fechaNacimiento = fechaNacimiento;
+        this.dueñoId = dueñoId;
+    }
+
+    public MascotaDTO(String especie, String raza, String color, String tamaño, Date fechaNacimiento, int dueñoId){
+        this.especie = especie;
+        this.raza = raza;
+        this.color = color;
+        this.tamaño = tamaño;
+        this.fechaNacimiento = fechaNacimiento;
+        this.dueñoId = dueñoId;
+    }
+
+    public MascotaDTO(){
+
+    }
     public int getId() {
         return id;
     }
